@@ -1,9 +1,15 @@
 package Classes;
 
-public class SpecialClient extends Actor  {
+public class SpecialClient extends Actor {
 
     private int idVIP;
 
+    /**
+     * Функция-генератор специального клиента
+     * 
+     * @param name - имя
+     * @param id   - индивидуальный номер
+     */
     public SpecialClient(String name, int id) {
         super(name);
         this.idVIP = id;
@@ -25,25 +31,34 @@ public class SpecialClient extends Actor  {
         super.isMakeOrder = makeOrder;
     }
 
-    public Actor getActor()
-    {
+    public Actor getActor() {
         return this;
     }
 
     @Override
     public String getName() {
-        return super.name;        
+        return super.name;
     }
 
     @Override
     public void setName(String name) {
-       super.name = name;        
+        super.name = name;
     }
 
+    /**
+     * Функция возврата id номера vip клиента
+     * 
+     * @return - индивидуальный номер
+     */
     public int getIdVIP() {
         return idVIP;
     }
 
+    /**
+     * Функция записи id номера vip клиента
+     * 
+     * @param idVIP - индивидуальный номер специального клиента
+     */
     public void setIdVIP(int idVIP) {
         this.idVIP = idVIP;
     }
@@ -59,10 +74,10 @@ public class SpecialClient extends Actor  {
     }
 
     // public int getIdVIP() {
-    //     return idVIP;
+    // return idVIP;
     // }
 
     // public void setIdVIP(int idVIP) {
-    //     this.idVIP = idVIP;
+    // this.idVIP = idVIP;
     // }
 }

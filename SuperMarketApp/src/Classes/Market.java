@@ -13,6 +13,9 @@ public class Market implements iMarketBehaviour, iQueueBehaviour, iReturnOrder {
 
     private List<iActorBehaviour> queue;
 
+    /**
+     * Функция-генератор магазина
+     */
     public Market() {
         this.queue = new ArrayList<iActorBehaviour>();
     }

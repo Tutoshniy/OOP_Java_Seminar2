@@ -6,13 +6,6 @@ package Classes;
  */
 public class StockClient extends Actor {
 
-    /**
-     * Обозначаем параметры класса:
-     * 
-     * @param stockName  - название акции
-     * @param idStClient - индивидуальный номер клиента
-     * @param stockCount - количество участников акции
-     */
     private String stockName;
     private Integer idStClient;
     static int stockCount = 0;
