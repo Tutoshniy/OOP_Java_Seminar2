@@ -2,6 +2,9 @@ package Interfaces;
 
 import Classes.Actor;
 
+/**
+ * Интерфейся для работы с клиентом
+ */
 public interface iActorBehaviour {
     /**
      * Функция обозначения получения клиентом заказа
